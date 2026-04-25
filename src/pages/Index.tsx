@@ -8,12 +8,14 @@ import { Promises } from "@/components/romance/Promises";
 import { Footer } from "@/components/romance/Footer";
 import { FallingPetals } from "@/components/romance/FallingPetals";
 import { HeartCursor } from "@/components/romance/Cursor";
+import { SongPlayer } from "@/components/romance/SongPlayer";
 
 const Index = () => {
   return (
     <main className="relative overflow-x-hidden">
       <FallingPetals />
       <HeartCursor />
+      <SongPlayer />
       <Navbar />
       <Hero />
       <EyesSection />
