@@ -57,6 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        rosy: {
+          deep: "hsl(var(--rose-deep))",
+          DEFAULT: "hsl(var(--rose))",
+          soft: "hsl(var(--rose-soft))",
+        },
+        blush: "hsl(var(--blush))",
+        tulip: "hsl(var(--tulip))",
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          soft: "hsl(var(--gold-soft))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -74,19 +85,6 @@ export default {
         "gradient-petal": "var(--gradient-petal)",
         "gradient-sunset": "var(--gradient-sunset)",
       },
-      colors: {
-        rose: {
-          deep: "hsl(var(--rose-deep))",
-          DEFAULT: "hsl(var(--rose))",
-          soft: "hsl(var(--rose-soft))",
-        },
-        blush: "hsl(var(--blush))",
-        tulip: "hsl(var(--tulip))",
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          soft: "hsl(var(--gold-soft))",
-        },
-      } as any,
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
