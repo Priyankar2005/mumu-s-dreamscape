@@ -57,33 +57,64 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        rosy: {
+          deep: "hsl(var(--rose-deep))",
+          DEFAULT: "hsl(var(--rose))",
+          soft: "hsl(var(--rose-soft))",
+        },
+        blush: "hsl(var(--blush))",
+        tulip: "hsl(var(--tulip))",
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          soft: "hsl(var(--gold-soft))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        script: ["'Dancing Script'", "cursive"],
+        serif: ["'Cormorant Garamond'", "serif"],
+        sans: ["'Inter'", "sans-serif"],
+      },
+      backgroundImage: {
+        "gradient-romance": "var(--gradient-romance)",
+        "gradient-rose": "var(--gradient-rose)",
+        "gradient-petal": "var(--gradient-petal)",
+        "gradient-sunset": "var(--gradient-sunset)",
+      },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(30px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "scale-in": {
+          "0%": { opacity: "0", transform: "scale(0.9)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        "spin-slow": { to: { transform: "rotate(360deg)" } },
+        "pupil-glow": {
+          "0%, 100%": { boxShadow: "0 0 80px hsl(345 90% 70% / 0.6), inset 0 0 60px rgba(0,0,0,0.8)" },
+          "50%": { boxShadow: "0 0 120px hsl(345 95% 75% / 0.9), inset 0 0 80px rgba(0,0,0,0.9)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 0.8s ease-out forwards",
+        "scale-in": "scale-in 0.6s ease-out forwards",
+        "spin-slow": "spin-slow 20s linear infinite",
+        "pupil-glow": "pupil-glow 3s ease-in-out infinite",
       },
     },
   },

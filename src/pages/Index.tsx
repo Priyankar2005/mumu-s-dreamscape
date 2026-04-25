@@ -1,16 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Navbar } from "@/components/romance/Navbar";
+import { Hero } from "@/components/romance/Hero";
+import { EyesSection } from "@/components/romance/EyesSection";
+import { Memories } from "@/components/romance/Memories";
+import { Letter } from "@/components/romance/Letter";
+import { Sorry } from "@/components/romance/Sorry";
+import { Promises } from "@/components/romance/Promises";
+import { Footer } from "@/components/romance/Footer";
+import { FallingPetals } from "@/components/romance/FallingPetals";
+import { HeartCursor } from "@/components/romance/Cursor";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="relative overflow-x-hidden">
+      <FallingPetals />
+      <HeartCursor />
+      <Navbar />
+      <Hero />
+      <EyesSection />
+      <Memories />
+      <Letter />
+      <Sorry />
+      <Promises />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
